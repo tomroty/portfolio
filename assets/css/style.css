@@ -1,0 +1,46 @@
+* {
+    font-family: "Inter", serif;
+}
+
+
+
+li{
+    list-style: none;
+    padding: 2%;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+}
+
+nav div{
+    display: flex;
+    font-size: 300%;
+}
+
+
+nav ul{
+    display: flex;
+}
+
+figure{
+    display: flex;
+    justify-content: center;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+p{
+    display: flex;
+    justify-content: center;
+}
