@@ -1,7 +1,10 @@
 * {
     font-family: "Inter", serif;
     font-weight: 400;
-    margin: 0;
+    --grey: #EFEFEF;
+    --dark-grey: #D9D9D9;
+    --darker-grey: #BFBFBF;
+    --blue: #2D9CDB;
 
 }
 
@@ -9,7 +12,6 @@
 
 li{
     list-style: none;
-    margin: auto 10px;
     padding: 2%;
 }
 
@@ -17,7 +19,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5%;
+    padding: 1% 5%;
 }
 
 nav div{
@@ -34,6 +36,8 @@ figure{
     justify-content: center;
 }
 
+
+
 article{
     display: flex;
     flex-direction: column;
@@ -45,13 +49,50 @@ article{
 
 #description{
     max-width: 400px;
-    margin: auto 30px;
+    margin: 0 30px 20px;
+}
+
+article div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu-button{
+    color: inherit;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.menu-button:hover{
+    color: inherit;
+    transform: scale(2.2);
+    background-color: var(--grey);
 }
 
 
+
+
 .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: inherit;
+    background-color: var(--grey);
+    padding: 5px 10px;
+    margin: 0 10px;
+    border-radius: 8px;
     text-decoration: none;
+}
+
+.button:hover{
+    color: inherit;
+    background-color: var(--dark-grey);
+}
+
+.button:active{
+    background-color: var(--darker-grey);
 }
 
 #hero-image{
@@ -68,6 +109,26 @@ article{
 #name{
     font-size: 45px;
     padding: 0;
+    margin: 0;
+}
+
+.icon{
+    width: 40px;
+}
+
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    padding: 5px 10px;
+    margin: 30px 10px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.social-media-button-icon{
+    padding: 0 10px;
 }
 
 footer {
