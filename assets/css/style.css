@@ -1,12 +1,16 @@
 * {
     font-family: "Inter", serif;
     font-weight: 400;
+
     --grey: #EFEFEF;
     --dark-grey: #D9D9D9;
     --darker-grey: #BFBFBF;
-    --blue: #2D9CDB;
+    --blue: #2d70e2;
+    --lighter-blue: #4d8ff7;
+    --dark-blue: #1f5bbf;
 
 }
+
 
 
 
@@ -71,6 +75,10 @@ article div {
     background-color: var(--grey);
 }
 
+.menu-button:active{
+    background-color: var(--dark-grey);
+}
+
 
 
 
@@ -93,6 +101,27 @@ article div {
 
 .button:active{
     background-color: var(--darker-grey);
+}
+
+.button-blue{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    background-color: var(--blue);
+    color: white;
+    padding: 5px 10px;
+    margin: 0 10px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.button-blue:hover{
+    background-color: var(--lighter-blue);
+}
+
+.button-blue:active{
+    background-color: var(--dark-blue);
 }
 
 #hero-image{
@@ -125,14 +154,84 @@ article div {
     margin: 30px 10px;
     border-radius: 8px;
     text-decoration: none;
+    scale: 150%;
 }
 
 .social-media-button-icon{
     padding: 0 10px;
 }
 
+
+
+#project-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.project{
+    max-width: 250px;
+    border: rgb(218, 218, 218) 1px solid;
+    border-radius: 12px;
+    padding: 0;
+    margin: 20px;
+    box-shadow: 2px 3px 8px 0px rgba(0,0,0,0.2);
+}
+
+.project:hover{
+    transform: scale(1.05);
+}
+
+
+
+.project-image{ 
+    max-width: 250px;
+    border-radius: 12px 12px 0 0;
+    padding: 0;
+    
+    
+}
+
+.project-description{
+
+}
+
+.project-button{
+    
+    margin: 0 10px 10px;
+}
+
+
+
 footer {
     display: flex;
     justify-content: center;
     padding-top: 30px;
 }
+
+
+@media (max-width: 768px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    nav div {
+        display: flex;
+        font-size: 300%;
+        justify-content: center;
+        padding: 0;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    
+    
+
+}
+
+
