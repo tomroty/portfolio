@@ -17,22 +17,27 @@
 li{
     list-style: none;
     padding: 2%;
+    
 }
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1% 5%;
+    padding: 0 5%;
+    margin: auto 0 100px;
+    
 }
 
 nav div{
     display: flex;
     font-size: 300%;
+    
 }
 
 nav ul{
     display: flex;
+    
 }
 
 figure{
@@ -70,7 +75,6 @@ article div {
 }
 
 .menu-button:hover{
-    color: inherit;
     transform: scale(2.2);
     background-color: var(--grey);
 }
@@ -92,10 +96,10 @@ article div {
     margin: 0 10px;
     border-radius: 8px;
     text-decoration: none;
+    border: none;
 }
 
 .button:hover{
-    color: inherit;
     background-color: var(--dark-grey);
 }
 
@@ -114,6 +118,8 @@ article div {
     margin: 0 10px;
     border-radius: 8px;
     text-decoration: none;
+    border: none;
+    
 }
 
 .button-blue:hover{
@@ -129,6 +135,7 @@ article div {
     max-width: 300px;
     padding: 5px;
 }
+
 
 #short-description{
     padding-bottom: 0;
@@ -150,8 +157,8 @@ article div {
     align-items: center;
     justify-content: center;
     color: inherit;
-    padding: 5px 10px;
-    margin: 30px 10px;
+    padding: 5px 10px 0;
+    margin: 30px 10px 0;
     border-radius: 8px;
     text-decoration: none;
     scale: 150%;
@@ -159,6 +166,7 @@ article div {
 
 .social-media-button-icon{
     padding: 0 10px;
+    margin: 0;
 }
 
 
@@ -172,7 +180,7 @@ article div {
 
 .project{
     max-width: 250px;
-    border: rgb(218, 218, 218) 1px solid;
+    border: var(--grey) 1px solid;
     border-radius: 12px;
     padding: 0;
     margin: 20px;
@@ -193,10 +201,6 @@ article div {
     
 }
 
-.project-description{
-
-}
-
 .project-button{
     
     margin: 0 10px 10px;
@@ -204,33 +208,119 @@ article div {
 
 
 
+
 footer {
     display: flex;
     justify-content: center;
-    padding-top: 30px;
+    padding-top: 1%;
 }
 
 
-@media (max-width: 768px) {
+
+.contact-form{
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 3%;
+    border: 1px solid var(--grey);
+    border-radius: 12px;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-firstname,
+.form-lastname,
+.form-email,
+.form-message,
+.form-button {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-firstname input,
+.form-lastname input,
+.form-email input,
+.form-message textarea {
+    padding: 2%;
+    resize: none;
+}
+
+.form-button button {
+    padding: 3%;
+    border: none;
+    cursor: pointer;
+}
+
+
+.form input:focus,
+.form textarea:focus {
+    outline: none;
+}
+
+.contact-form input{
+    width: 378px;
+    border-radius: 8px;
+    border: 1px solid var(--grey);
+}
+
+
+.contact-form textarea {
+    width: 378px;
+    border-radius: 8px;
+    min-height: 150px;
+    max-height: fit-content;
+    resize:none;
+    border: 1px solid var(--grey);
+}
+
+
+#not-yet-implemented a{
+    text-decoration: none;
+    color: var(--blue);
+}
+
+
+@media (max-width: 560px) {
 
     nav {
         display: flex;
         flex-direction: column;
+        margin: 0;
+        padding: 0;
     }
     nav div {
         display: flex;
         font-size: 300%;
         justify-content: center;
         padding: 0;
+        
     }
     nav ul {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 0;
+        
+    }
+
+    li{
+        padding: 10%;
+    }
+
+    .project{
+        margin: 0 20px 20px;
     }
     
-    
+    .menu-button{
+        font-size: larger;
+    }
 
 }
 
