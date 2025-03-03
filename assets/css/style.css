@@ -86,6 +86,8 @@ article div {
 
 
 
+
+
 .button{
     display: flex;
     align-items: center;
@@ -130,10 +132,19 @@ article div {
     background-color: var(--dark-blue);
 }
 
+#logo {
+    font-size: 3rem;  
+    text-decoration: none;
+    color: black;
+    padding: 10px 0px;
+  }
+  
+
 #hero-image{
     width: 60%;
     max-width: 300px;
     padding: 5px;
+    border-radius: 50%;
 }
 
 
