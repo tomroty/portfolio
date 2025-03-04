@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Title - Portfolio</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>Portfolio</div>
+        <ul>
+          <li><a class="menu-button" href="../index.html">Home</a></li>
+          <li><a class="menu-button" href="../portfolio.html">Portfolio</a></li>
+          <li><a class="menu-button" href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="project-details">
+        <h1 class="project-title">Remember</h1>
+
+        <div class="project-showcase">
+          <img
+            class="project-detail-image"
+            src="../assets/img/project/remember.png"
+            alt="Project screenshot"
+          />
+        </div>
+
+        <div class="project-content">
+          <div class="project-info">
+            <h2>About this project</h2>
+            <p>
+              Remember is a cross-platform social network project created by a
+              team of two. It allows users to run the application simultaneously
+              on the web, Electron, and Android. The project is built with
+              TypeScript. It is based on Next.js, PostgreSQL, and Nginx, all
+              launched within Docker containers for easy deployment.
+            </p>
+
+            <p>
+              The project basic social media features such as creating posts,
+              contact page login, and registration. Although the main goal was
+              to create a cross-platform application, we wanted to go further so
+              the project also include "Neuro", a contact graph (react-force-graph) that link you
+              graphically to your friends.
+            </p>
+          </div>
+
+          <div class="tech-stack">
+            <h2>Technologies</h2>
+            <ul class="tech-list">
+              <li class="tech-item">Next.js</li>
+              <li class="tech-item">TypeScript</li>
+              <li class="tech-item">Docker</li>
+              <li class="tech-item">NGINX</li>
+              <li class="tech-item">PostgreSQL</li>
+              <li class="tech-item">Android Studio</li>
+              <li class="tech-item">Electron</li>
+            </ul>
+          </div>
+
+          <div class="project-features">
+            <h2>Key Features</h2>
+            <ul class="features-list">
+              <li>Cross-platform application</li>
+              <li>Next.js server-side rendering</li>
+              <li>PostgreSQL database</li>
+              <li>NGINX reverse proxy</li>
+              <li>Electron and Android versions</li>
+              <li>TypeScript for type safety</li>
+              <li>JWT authentication</li>
+              <li>Responsive design</li>
+              <li>Basic social media features</li>
+              <li>Neuro contact graph</li>
+              <li>Easy deployment with Docker</li>
+            </ul>
+          </div>
+
+          <div class="back-link">
+            <a class="button" href="../portfolio.html">
+              <i class="fas fa-arrow-left"></i> Back to Portfolio
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p id="copyright">Tom Roty – All rights reserved. © 2025.</p>
+    </footer>
+  </body>
+</html>
