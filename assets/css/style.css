@@ -31,7 +31,7 @@
 .navbar-collapse.show,
 .navbar-collapse.collapsing {
   position: fixed;
-  top: 60px; /* Height of the navbar */
+  top: 58px; /* Height of the navbar */
   left: 0;
   right: 0;
   bottom: 0;
@@ -67,7 +67,7 @@ main {
 }
 
 #index-main {
-  padding-top: 10%; 
+  padding: 12% 0 0;
 }
 
 
@@ -458,6 +458,10 @@ footer {
 
   .menu-button {
     font-size: larger;
+  }
+
+  #index-main {
+    padding: 70px 0 0;
   }
 }
 
