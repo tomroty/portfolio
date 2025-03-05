@@ -16,14 +16,14 @@
 }
 
 .navbar {
-  padding: 0 20px;
+  padding: 15px 15px;
   background-color: white;
 }
 
 .navbar-collapse.show,
 .navbar-collapse.collapsing {
   position: fixed;
-  top: 56px; /* Height of the navbar */
+  top: 50px; /* Height of the navbar */
   left: 0;
   right: 0;
   bottom: 0;
@@ -55,9 +55,12 @@
 }
 
 main {
-  padding-top: 150px;
+  padding-top: 100px;
 }
 
+li {
+  list-style-type: none;
+}
 
 
 .nav-link.active {
@@ -161,19 +164,17 @@ article div {
 #hero-image {
   width: 60%;
   max-width: 300px;
-  padding: 5px;
   border-radius: 50%;
+  margin: 0 0 20px;
 }
 
 #short-description {
-  padding-bottom: 0;
-  margin: auto 30px;
+  font-size: 1.5rem;
 }
 
+
 #name {
-  font-size: 45px;
-  margin: 0;
-  padding: 0;
+  font-size: 2.5rem;
 }
 
 .icon {
