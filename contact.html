@@ -1,54 +1,64 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <a href="index.html" id="logo">Portfolio</a>
-            <ul>
-                <li><a class="menu-button" href="index.html">Home</a></li>
-                <li><a class="menu-button" href="portfolio.html">Portfolio</a></li>               
-                <li><a class="menu-button" href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <a href="index.html" id="logo">Portfolio</a>
+        <ul>
+          <li><a class="menu-button" href="index.html">Home</a></li>
+          <li><a class="menu-button" href="portfolio.html">Portfolio</a></li>
+          <li><a class="menu-button" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section class="contact-form">
-            <form class="form" action="https://formspree.io/f/xqaerwgd" method="POST">
-                <div class="form-firstname">
-                    <label for="firstname">First name</label>
-                    <input type="text" id="firstname" name="firstname" required>
-                </div>
-                <div class="form-lastname">
-                    <label for="lastname">Last name</label>
-                    <input type="text" id="lastname" name="lastname" required>
-                </div>
-                <div class="form-email">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-message">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <div class="form-button">
-                    <button type="submit" class="button-blue">Send</button>
-                </div>
-            </form>
-        </section>
+      <section class="contact-form">
+        <form
+          class="form"
+          action="https://formspree.io/f/xqaerwgd"
+          method="POST"
+        >
+          <div class="form-firstname">
+            <label for="firstname">First name</label>
+            <input type="text" id="firstname" name="firstname" required />
+          </div>
+          <div class="form-lastname">
+            <label for="lastname">Last name</label>
+            <input type="text" id="lastname" name="lastname" required />
+          </div>
+          <div class="form-email">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-message">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div class="form-button">
+            <button type="submit" class="button-blue">Send</button>
+          </div>
+        </form>
+      </section>
     </main>
 
     <footer>
-        <p id="copyright">Tom Roty – All rights reserved. © 2025.</p>
+      <p id="copyright">Tom Roty – All rights reserved. © 2025.</p>
     </footer>
-</body>
+  </body>
 </html>
