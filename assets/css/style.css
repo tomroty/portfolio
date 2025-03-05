@@ -1,6 +1,6 @@
 * {
   font-family: "Inter", serif;
-  font-weight: 400;
+
 
   --grey: #efefef;
   --dark-grey: #d9d9d9;
@@ -10,27 +10,70 @@
   --dark-blue: #1f5bbf;
 }
 
-li {
-  list-style: none;
-  padding: 2%;
+
+.navbar-brand {
+  font-weight: 600;
 }
 
-nav {
+.navbar {
+  padding: 0 20px;
+  background-color: white;
+}
+
+.navbar-collapse.show,
+.navbar-collapse.collapsing {
+  position: fixed;
+  top: 56px; /* Height of the navbar */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar-collapse.show .navbar-nav,
+.navbar-collapse.collapsing .navbar-nav {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 0 5%;
-  margin: auto 0 100px;
+  width: 100%;
 }
 
-nav div {
-  display: flex;
-  font-size: 300%;
+.navbar-collapse.show .nav-item,
+.navbar-collapse.collapsing .nav-item {
+  width: 100%;
+  text-align: center;
 }
 
-nav ul {
-  display: flex;
+.navbar-collapse.show .nav-link,
+.navbar-collapse.collapsing .nav-link {
+  font-size: 1.5rem;
+  margin: 0;
+  width: 100%;
 }
+
+main {
+  padding-top: 150px;
+}
+
+
+
+.nav-link.active {
+  font-weight: 500;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+
+
 
 figure {
   display: flex;
@@ -377,23 +420,6 @@ footer {
 
   .project-image {
     max-width: 100%;
-  }
-
-  nav {
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav div {
-    justify-content: center;
-    padding: 0;
-  }
-  
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
   }
 
   li {
