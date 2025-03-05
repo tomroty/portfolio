@@ -378,9 +378,7 @@ footer {
   .project-image {
     max-width: 100%;
   }
-}
 
-@media (max-width: 560px) {
   nav {
     flex-direction: column;
     margin: 0;
@@ -410,3 +408,4 @@ footer {
     font-size: larger;
   }
 }
+
