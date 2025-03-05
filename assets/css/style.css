@@ -15,7 +15,6 @@
 
 .navbar {
   padding: 15px 15px;
-  background-color: transparent;
 }
 
 .navbar-brand {
@@ -65,6 +64,10 @@
 
 main {
   padding-top: 80px; 
+}
+
+#index-main {
+  padding-top: 10%; 
 }
 
 
@@ -318,9 +321,10 @@ footer {
   outline: none;
 }
 
+
 .contact-form input, 
 .contact-form textarea {
-  width: 378px;
+  width: 100%;
   border-radius: 8px;
   border: 1px solid var(--grey);
 }
@@ -420,6 +424,8 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+
   .project-title {
     font-size: 2rem;
   }
