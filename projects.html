@@ -8,7 +8,7 @@
     <meta name="author" content="Tom Roty" />
     <meta name="robots" content="index, follow" />
     <title>Tom Roty | Projects</title>
-    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -30,14 +30,23 @@
       <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
         <div class="container">
           <a class="navbar-brand" href="/index.html">Tom Roty</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto" id="navbar-list">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                <a class="nav-link" aria-current="page" href="/index.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="/projects.html">Projects</a>
@@ -49,10 +58,37 @@
           </div>
         </div>
       </nav>
-      </header>
+    </header>
     <main>
       <section>
         <ul id="project-list">
+          <li class="project">
+            <div>
+              <img
+                class="project-image"
+                src="/assets/img/project/eggdetector.JPG"
+                alt="placeholder"
+              />
+            </div>
+            <div class="project-description">
+              <article>
+                <h1>Egg Detector</h1>
+                <p>
+                  Egg thermal detection project, this is my part of a final
+                  year project ("Smart Chicken") where we had to create a smart
+                  chicken coop. I was in charge of the egg detection part, and I
+                  decided to use a thermal camera to detect and count the eggs,
+                  which was originally sent to a firebase database to be
+                  displayed on an app and send notifications.
+                </p>
+                <a
+                  class="button project-button"
+                  href="/project/eggdetector.html"
+                  >Learn more</a
+                >
+              </article>
+            </div>
+          </li>
           <li class="project">
             <div>
               <img

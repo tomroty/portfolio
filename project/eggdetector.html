@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tom Roty portfolio" />
+    <meta name="keywords" content="Tom Roty, portfolio, ESIEA, student" />
+    <meta name="author" content="Tom Roty" />
+    <meta name="robots" content="index, follow" />
+    <title>Tom Roty | Egg Detector</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
+        <div class="container">
+          <a class="navbar-brand" href="/index.html">Tom Roty</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto" id="navbar-list">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="project-details">
+        <h1 class="project-title">Egg Detector</h1>
+
+        <div class="project-showcase">
+          <img
+            class="project-detail-image"
+            src="/assets/img/project/eggdetector.JPG"
+            alt="Project screenshot"
+          />
+        </div>
+        <div class="project-showcase">
+          <img
+            class="project-detail-image"
+            src="/assets/img/project/eggdetectorterm.png"
+            alt="Project screenshot"
+          />
+        </div>
+
+        <div class="project-content">
+          <div class="project-info">
+            <h2>About this project</h2>
+            <p>
+              Egg thermal detection project, this is my part of a final year
+              project ("Smart Chicken") where we had to create a smart chicken
+              coop. I was in charge of the egg detection part, and I decided to
+              use a thermal camera to detect and count the eggs, which was originally sent
+              to a firebase database to be displayed on an app and send notifications.
+            </p>
+
+            <p>
+              This project utilizes a "MLX90640 thermal camera" with an
+              algorithm to detect chicken eggs based on thermal signatures. The
+              camera captures a temperature array with Python, that is then
+              processed with an algorithm in C that will detect and count the
+              eggs. The result is then sent back to the python script, which
+              will send the data to a firebase database.
+            </p>
+          </div>
+
+          <div class="tech-stack">
+            <h2>Technologies</h2>
+            <ul class="tech-list">
+              <li class="tech-item">Python</li>
+              <li class="tech-item">C</li>
+              <li class="tech-item">MLX90640 thermal camera</li>
+            </ul>
+          </div>
+
+          <div class="project-features">
+            <h2>Key Features</h2>
+            <ul class="features-list">
+              <li>Thermal detection of chicken eggs</li>
+              <li>Algorithm to detect and count eggs</li>
+            </ul>
+          </div>
+
+          <div class="project-links">
+            <a
+              class="button-blue"
+              href="https://github.com/tomroty/egg-thermal-detection"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+
+          <div class="back-link">
+            <a class="button" href="/projects.html">
+              <i class="fas fa-arrow-left"></i> Back to Portfolio
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p id="copyright">Tom Roty – All rights reserved. © 2025.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
